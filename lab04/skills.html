@@ -9,7 +9,7 @@
     </head>
     <body>
         <table>
-            <caption>Skills Table</Table></caption>
+            <caption>Skills Table</caption>
             <tr>
                 <th>Skill</th>
                 <th>Skill Level</th>
@@ -31,5 +31,22 @@
                 <td>Yes</td>
             </tr>
         </table>
+        <h1>Skills Survey</h1>
+        <form action="mailto:bmschamb@syr.edu" method="POST"></form>
+
+        <label for="firstname">Enter First Name</label>
+        <input type="text" name="firstname" id="firstname"><br>
+
+        <label for="skill">Favorite Skill</label>
+        <select name="skill" id="skill">
+            <option value="speak">Public Speaking</option>
+            <option value="type">Typing</option>
+            <option value="wrt">Writing Essays</option> 
+        </select> <br>
+
+        <label for="comments">Enter your comments:</label><br>
+            <textarea name="comments" id="comments" rows="10" cols="100">Explain your favorite skill!</textarea><br>
+            
+        <input type="submit" value="Submit Survey">
     </body>
 </html>
