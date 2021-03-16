@@ -22,11 +22,17 @@
             }
             li a {color:deeppink;} 
             /* descendant selector- the space means we are only styling a tags inside li tags */
+            #firstp {color: green;}
+            /* above is a id selector */
+            .otherthing {color:orange;}
+            /*above is a class selector */
         </style>
     </head>
     <body>
-        <p>Lorem ipsum <a herf="http://www.google.com">Google</a></p>
-        <p>Second paragraph</p>
+        <!-- id values must be unique-->
+        <p id="firstp">Lorem ipsum <a herf="http://www.google.com">Google</a></p>
+        <!-- class attribute vlaues can be used over and over again-->
+        <p class="otherthing">Second paragraph</p>
         <p>Third paragraph</p>
         <ul><li>my list item <a herf="http://www.google.com">Google</a></li></ul>
     </body>
