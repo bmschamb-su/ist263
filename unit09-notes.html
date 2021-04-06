@@ -23,14 +23,25 @@
                 body {background-color: orange;}
                 .row1 div {padding: 0px;}
                 .row1 {padding: 0px;}
+                .sidebar {display: none;}
+                /* ^^ makes the selected item disappear */
             }
             /* the 600px in the media query is called a breakpoint */
+            .maincontent {
+                width: 70%;
+                float: left;
+            }
+            .sidebar {
+                float: right;
+                width: 20%;
+                border: 1px solid orange;
+            }
         </style>
     </head>
     <body>
 
         <h1>Flexbox</h1>
-
+        <div class="maincontent">
         <!-- large width banner image -->
         <img src="https://laferger.github.io/ist263/images/forever_orange.jpg" alt="large campus banner" class="banner">
 
@@ -52,6 +63,12 @@
                 <p>Positions related to Career Goals</p>
             </div>
         </div>
-
+    </div>
+    <div class="sidebar">
+        <aside>
+            <h2>What does Syracuse University Tuition Cost?</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+        </aside>
+    </div>
     </body>
 </html>
