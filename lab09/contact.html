@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .p {float: left; margin-left: 10px;}
+            .clearclass {clear: both;}
+            .part1 {background-color: skyblue;}
+            .part1, .part2 {margin: 20px;}
+            .part1 {border-radius: 1em / 1em;}
+
+            .part2 {display: flex;}
+            .part2 {flex-wrap: wrap;}
+            .map .survey {display: flex;}
+            .part2 {background-color: royalblue;}
+            .part2 article {padding: 70px;}
+            .part2 {border-radius: 2em / 2em;}
+
+            
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="skills.html">Skills</a>
+        </nav>
+    
+        <h1>Contact</h1>
+
+        <div class="part1">
+        <p>Bridget Schambers <br>
+            45 Lenihan Lane <br>
+            East Greenwich, RI 
+            02818</p>
+        
+        <a href="mailto:bmschamb@syr.edu">Bridget Schambers Email</a> <br>
+        
+        <a href="https://www.linkedin.com/in/bridget-schambers/"><img src="../images/logo-sized.png" alt="linkedin logo">My Linkedin Profile</a>
+        <div class="clearclass"></div>
+        </div>
+
+        <div class="part2">
+        
+        <div class="maps">
+        <article>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.7806739924977!2d-71.53650068456639!3d41.6388719792418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5b51addb119a7%3A0x8d9556a98b30d252!2s45%20Lenihan%20Ln%2C%20East%20Greenwich%2C%20RI%2002818!5e0!3m2!1sen!2sus!4v1614273021399!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+        </div>
+        
+        <div class="survey">
+        <article>
+        <h1>Skills Survey</h1>
+        <form action="mailto:bmschamb@syr.edu" method="POST"></form>
+        
+
+        
+        <label for="firstname">Enter First Name</label>
+        <input type="text" name="firstname" id="firstname"><br>
+        
+
+       
+        <label for="skill">Favorite Skill</label>
+        <select name="skill" id="skill">
+            <option value="speak">Public Speaking</option>
+            <option value="type">Typing</option>
+            <option value="wrt">Writing Essays</option> 
+        </select> <br>
+        
+
+        
+        <label for="comments">Enter your comments:</label><br>
+            <textarea name="comments" id="comments" rows="10" cols="50">Explain your favorite skill!</textarea><br>
+        
+
+
+        <input type="submit" value="Submit Survey">
+        </article>
+        </div>
+        </div>
+    </body>
+</html>
