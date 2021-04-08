@@ -16,30 +16,37 @@
 
             .image {max-width: 100%;}
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 920px) {
                 body {background-color: cadetblue;}
+                nav a {display: inline-block; 
+            width: 100%;}
+            span {display: none;}
+            nav a {padding: 5px;}
             }
 
-            @media only screen and (min-width: 920px) {
-                body {background-color: pink;}
+           
 
-            }
 
+           
             
 
         </style>
     </head>
 <body> 
+    
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="contact.html">Contact</a> |
+        <a href="index.html">Home</a> <span>|</span>
+        <a href="contact.html">Contact</a> <span>|</span>
         <a href="skills.html">Skills</a>
     </nav>
+    
+    
+
     <h1>Bridget Schambers Biography</h1>
     
-    <div class="image">
-    <header><img src="../images/bio.png" alt="my photo"></header>
-    </div>
+    
+    <header><img src="../images/bio.png" alt="my photo" class="image">></header>
+    
     
     <h2>Personal Information</h2>
     <main>
