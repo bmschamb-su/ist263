@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+    </head>
+    <body>
+
+        <nav>
+            <a href="home-page.html">Home</a> <span>|</span>
+            <a href="food-page.html">Contact</a> <span>|</span>
+            <a href="activities-page.html">Skills</a>
+        </nav>
+
+        <h1>About Page</h1>
+        <header><img src="site media/rhodeisland.png" alt="RI" class="image"></header>
+
+        <h2>Beach Towns</h2> 
+        <p>If you want to live near the water or directly on the waterfront, Narragansett, Newport, Jamestown, and Middletown. These are very popular towns for people to live in once they retire as well because they all have great places to go on walks and into the main parts of town.</p>
+
+        <h2>Family Friendly Towns</h2>
+        <p> If people are looking to raise their family in Rhode Island and are looking for areas with good school systems, Barrington, East Greenwich, North Kingstown, and South Kingstown are some great examples of towns that are great for families. These are all towns where you can find many different neighborhoods, playgrounds, and downtown areas with great places to eat.</p>
+
+        <h2>City</h2>
+        <p>Providence is the capital of Rhode Island and if you are a person who likes living in a city, this would be the place to be. There is an East side of Providence where you can find houses and then the downtown area where the apartments are. Providence is also a great place to live because it is in walking distance to a lot of places.</p>
+
+        <h2>Which area would you like to live in?</h2>
+        <form action="mailto:bmschamb@syr.edu" method="POST"></form>
+
+        <label for="firstname">Enter First Name</label>
+        <input type="text" name="firstname" id="firstname"><br>
+
+        <label for="area">Part of Rhode Island</label>
+        <select name="skill" id="skill">
+            <option value="beach">Beach Town</option>
+            <option value="town">Family Town</option>
+            <option value="city">City</option> 
+        </select> <br>
+
+        <label for="comments">Enter your comments:</label><br>
+            <textarea name="comments" id="comments" rows="10" cols="100">Explain why!</textarea><br>
+            
+        <input type="submit" value="Submit Survey">
+    </body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,24 @@
             span {display: none;}
             nav a {padding: 5px;}
             }
+
+            #skip {
+                position: absolute;
+                left: -999px;
+                background-color: white;
+                border: 1px solid black;
+            }
+
+            #skip:focus {
+                position: absolute;
+                left: 10px;
+            }
         </style>
     </head>
 <body> 
     
     <nav>
+        <a href="#maincontent" id="skip">Skip to Content</a>
         <a href="index.html">Home</a> <span>|</span>
         <a href="contact.html">Contact</a> <span>|</span>
         <a href="skills.html">Skills</a>
