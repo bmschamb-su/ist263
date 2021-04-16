@@ -1,12 +1,12 @@
 body {
     background-color: #edeef7;
 }
-p {color: #7868e6;}
+p {color: #07337a;}
 a:link {color: #f507d9;}
-h1 {color: #b8b5ff;}
+h1 {color: #2a94d1;}
 nav {background-color: #bd32d9;}
 nav a {
-    color: #f8a9fc;
+    color: #fcf8ac;
     padding: 10px;
 }
 nav a:hover {background-color: #e4fbff;}
