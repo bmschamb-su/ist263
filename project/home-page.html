@@ -29,9 +29,15 @@
             p.solid {border-style: solid;}
             h1 {text-align: center;}
             h1, h2 {font-family: 'Antonio', sans-serif;}
-            p {font-family: Arial, Helvetica, sans-serif;}
+            p {font-family: Arial, Helvetica, sans-serif;}   
             
         </style>
+        <script>
+            function Leaving() {
+                //alert('you left this form element');
+                document.getElementById("message") .innerHTML = "you left this form element";
+            }
+        </script>
     </head>
     <body>
 
@@ -63,25 +69,21 @@
 
         <h2>Which area would you like to live in?</h2>
         <form action="mailto:bmschamb@syr.edu" method="POST"></form>
-        <div class="row">
-            <div class="column">
-                <label for="firstname">Enter First Name</label>
-                <input type="text" name="firstname" id="firstname"><br>
-            </div> 
-            <div class="column">
-                <label for="skill">Part of Rhode Island</label>
+            <label for="firstname">Enter First Name</label>
+                <input type="text" name="firstname" id="firstname" onblur="Leaving();"><br>
+                <div id="message"></div>
+            <label for="skill">Part of Rhode Island</label>
                 <select name="skill" id="skill">
                     <option value="beach">Beach Town</option>
                     <option value="town">Family Town</option>
                     <option value="city">City</option> 
                 </select> 
-            </div>
             <div class="column">
-                <label for="comments">Enter your comments:</label><br>
-                    <textarea name="comments" id="comments" rows="10" cols="100">Explain why!</textarea><br>
+                <label for="comments">Enter your comments:</label> <br>
+                    <textarea name="comments" id="comments" rows="10" cols="50">Explain why!</textarea><br>
                     
                 <input type="submit" value="Submit Survey">
             </div>
-        </div>
+         
     </body>
 </html>

@@ -9,12 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap" rel="stylesheet">
         <style>
-            .banner {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
+            
             .row {
                 display: flex;
                 justify-content: space-around;
@@ -25,7 +20,14 @@
             h1 {text-align: center;}
             h1, h2 {font-family: 'Antonio', sans-serif;}
             p {font-family: Arial, Helvetica, sans-serif;}
-            p.solid {border-style: solid;}            
+            p.solid {border-style: solid;}
+            /* .row, .column {margin: 10px;} */
+            header {background-image: url("sitemedia/explore.jpeg");}    
+            @media screen and (max-width: 600px) {
+                .column {width: 100%;}
+            }
+            
+                  
         </style>
     </head>
     <body>
@@ -35,7 +37,7 @@
             <a href="activities-page.html">Activities</a>
         </nav>
         
-        <header><img src="sitemedia/explore.jpeg" alt="explore" class="banner"></header> 
+        <header><img src="sitemedia/explore.jpeg"></header> 
         <h1>Activities To Do</h1>
         <h2>Beaches to Visit</h2>
         <main>
@@ -43,10 +45,10 @@
             <div class="column">
                 <img src="sitemedia/bonnet.jpeg" alt="bonnet" class="club">
             </div>
-            <div class="row">
+            <div class="column">
                 <img src="sitemedia/beach.jpeg" alt="beach" class="tower">
             </div>
-            <div class="row">
+            <div class="column">
                 <p class="solid">Rhode Island is definitely the best place to visit when it's summer. Being “the ocean state”, Rhode Island is filled with a number of different beaches and activities to do during the summer. Some of my personal favorite beaches are located in Narragansett. Personally, I think the town beach is great for people who are visiting, it has a snack bar, is in walking distance to shops, and has some of the best waves. If you are someone who is looking to spend an entire summer in Rhode Island, Bonnet Shores Beach Club is another personal favorite. This beach is a private little beach and is perfect for families. There is a pool, gift shop, snack bar, pit with a live band on the weekends, and even gives people the option to get a cabana or bathhouse if they want. Like I said before, this is a private beach so I recommend this place for families who are looking to spend the entire summer in Rhode Island. Some more great options for public beaches are Misquamicut Beach in Westerly, East Beach in Watch Hill, First Beach in Newport, and East Matunuck Beach in South Kingstown. </p>
             </div>
         </div>
